@@ -1,5 +1,5 @@
 
-import 'dart:ffi';
+
 
 class DataModel{
 final Coord cord;
@@ -64,7 +64,7 @@ class Maincls{
   Maincls({required this.feelslike,required this.humidity,required this.pressure,required this.temp,
   required this.tempmax,required this.tempmin});
 factory Maincls.fromJson(Map <String,dynamic> json){
-  double? temp=json["temp"];
+  double temp=json["temp"];
   double? feelslike=json["feels_like"];
   double? tempmin=json["twmp_min"];
   double? tempmax=json["temp_max"];
@@ -78,12 +78,12 @@ return Maincls(feelslike: feelslike, humidity: humidity, pressure: pressure, tem
 class Wind{
   final double speed;
   final dynamic deg;
-  final double? gust;
+  final dynamic gust;
   Wind({required this.deg,required this.gust,required this.speed});
   factory Wind.fromJson(Map <String,dynamic> json){
     double speed=json["speed"] as double;
     dynamic deg=json["deg"] ;
-    double? gust=json["gust"];
+    dynamic gust=json["gust"];
     return Wind(deg: deg, gust: gust, speed: speed);
 
   }
