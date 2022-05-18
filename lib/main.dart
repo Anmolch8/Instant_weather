@@ -33,10 +33,10 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
  
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Instant Weather',
         theme: ThemeData(
         
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.blueGrey,
         ),
          routes: {
           //"/load":(context) => Loading(),
