@@ -81,6 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
           body: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+           
               Text(
                 data.lper == true
                     ? " Give location access to app or turn on  device location or set it manually from settings"

@@ -72,8 +72,8 @@ Future<DataModel> dataCalling() async{
     return Future.error(
       103);
   } 
- 
-  return await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
+  
+  return await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best,timeLimit: const Duration(seconds: 10));
 }
   Position location= await _specifyPosition();
   double lat=location.latitude;
